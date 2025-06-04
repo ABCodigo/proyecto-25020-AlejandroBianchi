@@ -1,0 +1,43 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   font-family: "Roboto", sans-serif;
+   
+}
+
+.mipagina {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    background-color: rgba(255, 0, 0, 0.75);   
+}
+
+p{
+   font-size: 20px;
+   border: 3px double black;
+   margin: 200px;
+   padding: 30px;
+   background-color: white;
+}
+
+.flechaleft{
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        border: 2px solid black;
+        padding: 5px 10px;
+        border-radius: 50px;
+        background-color: white;                
+        
+        a{
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+            
+            
+        }
+}
+

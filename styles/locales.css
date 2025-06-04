@@ -1,0 +1,77 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   font-family: "Roboto", sans-serif;
+   
+}
+
+/*body{
+   height: 100%;
+}*/
+
+.mapas {
+
+   /*background-color: chartreuse;*/
+   background-image: url(../image/fondohero/jfoto4.jpg);
+    /*background-position: ;*/
+   background-size: cover;
+
+   display: flex;
+   flex-direction: column;   
+
+   h2{
+      text-align: center;
+      margin: 25px 0 35px;
+      color: white;
+   }   
+}
+
+.locales {
+
+   height: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   margin-bottom: 30px;
+   
+
+   p {
+      font-size: 15px;
+      color: white;
+   }
+
+   .palermo, .recoleta{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 5px solid black;
+      padding: 16px 32px 32px;
+      background-color: rgba(133, 79, 79, 0.65);
+
+      .mapa-ubicacion { 
+          border: 2px solid black;
+          margin-top: 32px;
+
+      iframe{
+         /*margin: 25px;*/
+         width: 480px; /*ver de ponerlo en porcentajes, se habia tomado un 80%*/
+         height: 360px;
+      }
+
+      }        
+
+   }
+}
+
+
+   
+
+
+
+   
+
+   
+
+   
+
+

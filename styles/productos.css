@@ -1,0 +1,44 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   font-family: "Roboto", sans-serif;   
+}
+
+.obrero {
+    text-align: center;
+    margin: 0 auto;
+
+    h2 {
+        margin: 50px 0;
+    }
+
+    img {
+        width: 300px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 25px;
+    }
+
+}
+
+ .flechaleft{
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        border: 2px solid black;
+        padding: 5px 10px;
+        border-radius: 50px;
+        background-color: white;                
+        
+        a{
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+            
+            
+        }
+
+}
