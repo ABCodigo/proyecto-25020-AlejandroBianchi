@@ -1,0 +1,434 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   font-family: "Roboto", sans-serif;   
+}
+
+body{
+    background-color: rgb(61, 12, 12);
+    margin-bottom: 30px;
+}
+
+header {
+   /*border: 3px solid blue;*/
+   color: white;
+   padding: 10px 25px;     /*padding: 18px 25px*/
+   width: 100%;
+
+   .logoyflecha {
+      display: flex;
+      justify-content: space-between;
+      /*border: 3px solid greenyellow;*/
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .flechaleft {
+      border: 2px solid black;
+      padding: 5px 10px;
+      border-radius: 50px;
+      background-color: white;
+
+      a {
+         font-size: 20px;
+         font-weight: bold;
+         color: black;
+      }
+   }
+}
+
+main{
+    margin-top: 0px;
+}
+
+#cart {
+    overflow-x: auto;
+    margin: 0 25px 0 25px;    
+}
+
+#cart table {
+    border-collapse: collapse;    
+    table-layout: fixed;  
+    background-color: rgb(237, 235, 235); 
+}
+
+#cart table img {
+    width: 100%;
+    height: auto;
+    max-width: 150px; 
+    border-radius: 5px;
+}
+
+#cart table td:nth-child(1) {
+    /* REMOVE column */
+    width: 45px;               
+    text-align: center;
+}
+
+#cart table td:nth-child(2) {
+    /* IMAGE column */
+    width: 150px; 
+    text-align: center;
+}
+    
+#cart table td:nth-child(3) {
+    /* PRODUCT column */
+    width: 120px;                             
+    text-align: center;    
+}
+
+#cart table td:nth-child(4),
+/* PRICE column */
+#cart table td:nth-child(5),
+/* QUANTITY column */
+#cart table td:nth-child(6) {
+    /* SUBTOTAL column */
+   width: 90px;                         
+   text-align: center;    
+}
+
+#cart table td:nth-child(5) input {
+    width: 50px;
+    padding: 5px 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#cart table thead {
+    border: 2px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;        
+    padding: 18px 0;
+    border-bottom: 3.5px solid rgb(159, 157, 157);
+}
+
+#cart table tbody tr td {
+    padding-top: 15px;
+    height: 102px;   /*controla el alto de cada fila pero desde 102px por debajo siempre se mantiene en 102px*/ 
+    border-bottom: 1.4px solid grey;
+}
+
+#cart table tbody td {
+    font-size: 16px;     
+}
+
+/* Remove Button Styling */
+.remove-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: #dc3545;
+    border-radius: 50%;
+    width: 40px;                                      
+    height: 40px;                                  
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.remove-btn:hover {
+    background-color: #e90e24;
+    color: white;
+}
+
+.section-p1 {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid blue;
+    margin-top: 10px;
+
+    h1 {
+        font-size: 24px;
+        margin: 10px 0 20px;  /*margin: 20px 0; o margin: 0 0 20px;*/
+        text-align: center;
+        color: white;
+    }
+
+    /*Intento de querer modificar el scrollbar para personalizarlo y que sea mas visible*/
+    /*::-webkit-scrollbar {
+        width: 16px;     Ancho del scrollbar vertical
+        height: 20px;    Alto del scrollbar horizontal
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #26ac45;   
+        border-radius: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }*/
+}
+
+.section-p2{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/*coupon,*/
+#subtotal {
+    width: 45%;
+    min-width: 370px;
+    border: 5px solid #e2e9e1;
+    padding: 10px 10px 20px 10px; 
+    border: 3px solid blue;
+}
+
+#coupon {
+    .tdcoupon {
+        padding: 1.6px 0 1.6px 10px;
+    }
+}
+
+.coupon{
+    height: 36px;
+    display: flex;
+    align-items: center;
+
+    p {
+        width: 12%;    
+        min-width: 60px;
+    }    
+}
+    .inputbutton{
+        display: flex;
+        width: 70%;
+        min-width: 170px;
+        font-size: 12px;
+ 
+        input{
+            width: 35%;
+            min-width: 75px;
+            margin-right: 5px;
+            padding-left: 2px;
+            background-color: rgb(251, 240, 240);
+        }        
+
+        button.aplicar{
+                width: 25%;
+                min-width: 85px;
+                background-color: #088178;
+                color: #fff;
+                cursor: pointer;
+                font-size: 1rem;
+                font-weight: 600;
+                border: none;                
+        } 
+        
+        button.aplicar:hover{
+            background-color: #46a39d;
+            border: 1.2px solid black;
+        }
+    }
+
+    #subtotal h3 {
+    padding-bottom: 15px;
+    color: white;
+}
+
+#subtotal table {
+    border-collapse: collapse;
+    width: 100%;
+    /*margin-bottom: 20px; */  /*o si se quiere separecion con el Total poner margin-bottom: 20px;*/
+}
+
+#subtotal table td {
+    padding: 10px 5px 10px 10px;
+    border: 1.4px solid grey;
+    /*padding-left: 10px;*/
+    background-color: rgb(237, 235, 235); 
+}
+
+#subtotal table tr:last-child td {
+    font-weight: bold;
+}
+
+#subtotal button.normal {     /*afecta al boton de pagar*/
+    background-color: #088178;
+    color: #fff;
+    padding: 7px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    font-size: 1.2rem;
+}
+    #subtotal button.normal:hover{
+        background-color: #46a39d;
+        border: 1.2px solid #6dc7c1;
+}
+
+
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */  
+
+@media (max-width: 1000px) {    
+     
+#cart table thead td {
+    font-size: 16px;
+    padding: 17px 0;
+}
+    
+#cart table tbody td {
+    font-size: 14.5px;
+}
+
+.section-p1 {    
+    h1 {
+        font-size: 22px;      
+        }
+    }
+}
+
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */  
+
+@media (max-width: 640px) {
+    #cart {
+        margin: 0 17px 0 17px;
+    }
+}
+
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */  
+
+@media (max-width: 600px) {
+    #cart table td:nth-child(2) {
+        max-width: 105px;
+    }
+
+    #cart table img {
+        max-width: 95px;
+    }
+
+    .remove-btn {
+        width: 30px;
+        height: 30px;
+
+        i {
+            width: 21px;
+            /*podria omitir width y height pues lo reemplaza font-size: 18px*/
+            height: 24px;
+            font-size: 18px;
+        }
+    }
+}
+
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */  
+
+@media (max-width: 477px) {
+
+    #cart {
+        margin: 0 8px 0 8px;
+    }
+
+    #cart table td:nth-child(1) {
+        width: 40px;
+    }
+
+    #cart table td:nth-child(3) {
+        width: 100px;
+    }
+
+    #cart table td:nth-child(4) {
+        width: 80px;
+    }
+
+    #cart table td:nth-child(5) {
+        width: 70px;
+    }
+
+    #cart table td:nth-child(6) {
+        width: 80px;
+    }
+
+    #cart table thead td {
+        font-size: 14px;
+    }
+
+    #cart table tbody td {
+        font-size: 13px;
+    }
+
+    .section-p1 {
+        h1 {
+            font-size: 20px;
+        }
+    }
+}
+
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */  
+
+@media (max-width: 420px) {
+
+    header {
+        padding: 8px 5px;
+
+        .logoyflecha {
+            a img {
+                width: 45px;
+                height: 32px;
+            }
+
+            .flechaleft {
+                padding: 3.5px 7px;
+
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    #cart {
+        margin: 0 7px 0 10px;
+    }
+
+    .section-p2 {
+        min-width: 300px;
+    }
+
+    /*#coupon,*/
+    #subtotal {
+        min-width: 300px;
+        /*padding: 10px 10px 20px 10px;*/
+    }
+
+.coupon {
+    p {
+        min-width: 45px;  /*60*/
+    }
+}
+
+.inputbutton {
+    min-width: auto;   /*130px*/
+    font-size: 12px;
+
+    input {
+        min-width: 65px;     /*75*/
+       /* margin-right: 5px;
+        padding-left: 2px;*/
+    }
+
+    button.aplicar {
+        min-width: 65px;       /*85*/
+        font-size: 13px;
+    }
+}
+
+    #subtotal table td {
+        border: 1.4px solid grey;
+        font-size: 13px;
+    }
+
+    #subtotal button.normal {
+        font-size: 16px;
+    }
+
+}
+
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */  

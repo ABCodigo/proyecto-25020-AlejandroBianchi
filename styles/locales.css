@@ -1,0 +1,212 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   font-family: "Roboto", sans-serif;
+}
+
+header {
+   /*border: 3px solid blue;*/
+   color: white;   
+   padding: 18px 25px 35px;
+
+   .logoyflecha {
+      display: flex;
+      justify-content: space-between;
+      /*border: 3px solid greenyellow;*/
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+      .flechaleft {
+         border: 2px solid black;
+         padding: 5px 10px;
+         border-radius: 50px;
+         background-color: white;
+
+         a {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+         }
+      }
+}
+
+.pagina-sucursales{
+   /*border: 5px solid rgb(32, 230, 49);*/
+   background-image: url(../image/fondohero/jfoto4.jpg);  
+   background-size: cover;
+   width: 100%;  /*habria que ver si sirve de algo*/
+
+   .mapas {
+      display: flex;
+      flex-direction: column;
+
+      h2{
+         text-align: center;
+         margin: 40px 0 40px;
+         color: white;
+      }      
+
+      .locales {
+         /*100% la imagen no llega hasta abajo del viewport pero si cuando se hace responsive y 100 vh alarga hacia abajo lolocales y cubren el viwport pero no se mantiene responsive la imagen*/
+         display: flex;
+         justify-content: space-around;
+         flex-wrap: wrap;
+         gap: 30px;
+         margin-bottom: 30px;     
+
+         .palermo, .recoleta{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 5px solid black;
+            padding: 16px 32px 32px;
+            background-color: rgba(133, 79, 79, 0.65); 
+            
+            p {
+               font-size: 15px;
+               color: white;
+            }  
+
+            .mapa-ubicacion { 
+               margin-top: 32px;
+
+               iframe{
+                  margin: 25px;
+                  width: 480px;
+                  height: 360px;
+               }
+            }         
+         }  
+      }
+   }
+}
+
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */  
+
+@media (max-width: 650px) {
+
+.pagina-sucursales{
+   .mapas {      
+      .locales {         
+         gap: 24px;
+         margin-bottom: 24px;
+
+         .palermo, .recoleta{
+            padding: 13px 26px 26px;             
+            
+            p {
+               font-size: 12px;              
+            }  
+
+            .mapa-ubicacion {                
+               margin-top: 26px;
+
+               iframe{
+                  margin: 20px;
+                  width: 384px; 
+                  height: 288px;
+               }
+            }         
+         }  
+      }
+   }
+}
+
+}
+
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */  
+
+@media (max-width: 530px) {
+
+.pagina-sucursales{ 
+
+   .mapas {
+      .locales {
+         gap: 19px;
+         margin-bottom: 19px;
+
+         .palermo, .recoleta{
+            padding: 10px 20px 20px;            
+            
+            p {
+               font-size: 10px;             
+            }  
+
+            .mapa-ubicacion { 
+               margin-top: 20px;
+
+               iframe{
+                  margin: 16px;
+                  width: 307px; 
+                  height: 230px;
+               }
+            }         
+         }  
+      }
+   }
+}
+
+}
+
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */ 
+
+@media (max-width: 430px) {
+
+header {
+   padding: 18px 5px 15px;
+
+   .logoyflecha {
+      a img {
+         width: 45px;
+         height: 32px;
+      }
+
+      h2 {
+          font-size: 20px;
+      }
+         
+      .flechaleft {
+         padding: 3.5px 7px;
+
+         a {
+            font-size: 16px;
+         }
+      }
+   }
+}
+
+.pagina-sucursales{   
+   .mapas {
+      .locales {         
+         gap: 15px;
+         margin-bottom: 15px;
+
+         .palermo, .recoleta{            
+            padding: 8px 16px 16px;            
+            
+            p {
+               font-size: 10px;
+            }  
+
+            .mapa-ubicacion {             
+               margin-top: 16px;
+
+               iframe{
+                  margin: 13px;
+                  width: 246px; 
+                  height: 184px;
+               }
+            }         
+         }  
+      }
+   }
+}
+
+}
+
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */ 
+   
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vito Pizza</title>
+    <!--Iconos Inicio Sesion-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <!--Link a hoja de estilos principal-->
+    <link rel="stylesheet" href="styles/iniciosesion.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logoyflecha">
+            <a href="iniciosesion.html" class="logo">
+                <img src="image/logoyempresa/logovp.png" class="logo" width="56px" height="40px" alt="Logo VitoPizzas">
+            </a> 
+            <img src="image/dibujos/dossf.png" class="dibudos" width="75px" height="100px" alt="dibujo pizzero">                   
+            <div class="flechaleft">
+                <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+        </div>
+    </header> 
+
+      
+        <form action="" method="get" autocomplete="off">
+    
+            <h1>INICIAR SESION</h1>
+    
+            <div class="campos-sesion">
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="usuario" name="usuario" placeholder="USUARIO" autofocus>
+                    <!--<input type="text" id="user" name="usuario" placeholder="USUARIO" autofocus required> required pone mensaje automatico si no se completa-->
+                    <div class="error-text"></div>
+                </div> 
+            </div>
+    
+            <div class="campos-sesion">
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" name="correo" placeholder="E-MAIL">
+                    <div class="error-text"></div>
+                </div>
+            </div>
+    
+            <div class="campos-sesion">
+                <div>
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" id="password" name="contraseña" placeholder="CONTRASEÑA">
+                    <div class="error-text"></div>
+                </div>
+            </div>
+    
+            <div class="buttons">
+                <!--<button type="submit">INGRESAR</button>  esto se reemplazo por input-->
+    
+                <input class="boton" type="submit" value="INGRESAR">
+                <a href="registrarse.html">Registrarse</a>
+            </div>
+    
+            <a href="#">Olvido su contraseña ?</a>
+            <!--quizas aca span para que haga alguna accion con JavaScript para recordar contraseña-->
+        </form>
+    
+    <script src="../scripts/iniciosesion.js"></script>
+
+</body>
+
+</html>
+

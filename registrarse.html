@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vito Pizza</title>    
+    <!--Iconos Inicio Sesion-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <!--Link a hoja de estilos principal-->
+    <link rel="stylesheet" href="styles/registrarse.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logoyflecha">
+            <a href="registrarse.html" class="logo">
+                <img src="image/logoyempresa/logovp.png" class="logo" width="56px" height="40px" alt="Logo VitoPizzas">
+            </a>
+            <img src="image/dibujos/unosf.png" class="dibudos" width="75px" height="100px" alt="dibujo pizzero">  
+            <div class="flechaleft">
+                <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <form action="#" autocomplete="off" id="formularioRegistro"> <!--<form action="/form-handler.php" method="get" target="_blank">-->
+
+        <h1>REGISTRESE</h1>
+
+        <div class="usuario">
+            <div class="info-p campo-control">
+                <label for="name">Usuario</label>
+                <input type="text" id="user" name="usuario" autofocus>
+                <div class="texto-error"></div>
+            </div>
+            
+        </div>
+
+        <h2>Informacion Personal</h2>
+        <div Class="info-personal">
+
+            <div class="info-p campo-control">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="usuario" autofocus>
+                <div class="texto-error"></div>
+            </div>
+
+            <div class="info-p campo-control" >
+                <label for="surname">Apellido</label>
+                <input type="text" id="surname" name="apellido">
+                <div class="texto-error"></div>
+            </div>
+
+            <div class="fechaygenero">
+                <div class="info-p campo-control birth">
+                    <label for="birthday">Nacimiento</label>
+                    <input type="date" id="birthday" name="">
+                    <div class="texto-error"></div>
+                </div>
+                <div class="info-p campo-control gender">                    
+                    <label for="gender">Genero</label>                    
+                    <select id="gender" name="genero">
+                        <option value="malen">Masculino</option>
+                        <option value="female">Femenino</option>
+                        <option value="nobinario">No Binario</option>
+                    </select>
+                    <div class="texto-error"></div>
+                </div>
+                
+            </div>
+            <div class="info-p campo-control celular">
+                <label for="phone">Celular</label>
+                <input class="codigo" type="text" id="cphone" name="codigotel" placeholder="codigo de area" maxlength="5">  
+                <!--<input class="quince" type="number" placeholder="(15)" disabled>-->   
+                <input class="numero" type="text" id="phone" name="telefono" placeholder="0000-0000" maxlength="8">
+                <div class="texto-error"></div>                
+            </div>
+
+            <div class="info-p campo-control">
+                <label for="email">E-mail</label>
+                <input type="email" id="tuCorreo" name="correo">
+                <div class="texto-error"></div>
+            </div>
+
+            <div class="info-p campo-control">
+                <label for="pass">Contraseña</label>
+                <input type="password" id="pass" name="contraseña">
+                <div class="texto-error"></div>
+            </div>
+
+        </div>
+
+        <h2>Informacion Residencial</h2>
+        <div class="info-residencia">
+
+            <div class="info-r campo-control">
+                <label for="state">Provincia</label>
+                <input type="text" id="state" name="provincia">
+                <div class="texto-error"></div>
+            </div>
+
+            <div class="info-r campo-control">
+                <label for="town">Localidad</label>
+                <input type="text" id="town" name="localidad">
+                <div class="texto-error"></div>
+            </div>
+
+            <div class="info-r campo-control">
+                <label for="neigbordhood">Barrio</label>
+                <input type="text" id="neigbordhood" name="barrio">
+                <div class="texto-error"></div>
+            </div>
+
+            <div class="info-r campo-control">
+                <label for="street">Calle</label>
+                <input type="text" id="street" name="calle">
+                <div class="texto-error"></div>
+            </div>
+
+            <div class="info-r campo-control">
+                <label for="blocknumber">Numero</label>
+                <input type="text" id="blocknumber" name="altura">
+                <div class="texto-error"></div>
+            </div>
+
+            <div class="pisoydpto">
+                <div class="info-r campo-control">
+                    <label for="floor">Piso</label>
+                    <input type="text" id="floor" name="piso">
+                    <div class="texto-error"></div>
+                </div>
+
+                <div class="info-r dpto campo-control">
+                    <label for="department">Depto.</label>
+                    <input type="text" id="department" name="departamento">
+                    <div class="texto-error"></div>
+                </div>
+            </div>
+            <div class="info-r campo-control">
+                <label for="zipcode">Cod. Postal</label>
+                <input type="text" id="zipcode" name="codigo">
+                <div class="texto-error"></div>
+            </div>
+
+        </div>
+
+        <button type="submit">Enviar</button>
+
+        <input class="resetear" type="reset" value="Resetear">
+
+    </form>
+
+    <script src="../scripts/registrarse.js"></script>
+
+</body>
+
+</html>
+
+<!--
+Falta la logica de validacion con JavaScript de ingresar numeros en los campos de numero y de letras en los campos de palabras.
+Tambien ver si es uppercase o lowercase aunque quizas no tan importante.
+-->

@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Roboto", sans-serif;   
+}
+
+header {
+    background-color: rgb(61, 12, 12);
+    /*border: 3px solid blue;*/
+    border-bottom: 8px solid green;
+    color: white;
+    padding: 18px 25px;
+
+    .logoyflecha {
+        display: flex;
+        justify-content: space-between;
+        /*border: 3px solid greenyellow;*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 35px;
+        color: white;
+    }
+
+    .flechaleft {
+        border: 2px solid black;
+        padding: 5px 10px;
+        border-radius: 50px;
+        background-color: white;
+
+        a {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+    }
+}
+
+.seccion-pizzas {
+    /*border: 3px solid blue;*/
+    background-color: rgb(61, 12, 12);
+    text-align: center;
+    padding-bottom: 80px;
+
+    .contenedor-productos {
+        /*border: 3px solid red;*/
+        background-color: rgb(61, 12, 12);
+        border-top: 3px solid red;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 35px;
+        flex-wrap: wrap;
+        gap: 40px;
+
+        .item-producto {
+            border: 6px solid rgb(151, 140, 140);
+            width: 335px;
+            height: 494px;
+            margin: 15px 0;
+            padding: 12px 15px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            & img {
+                background-color: white;
+                width: 100%;
+                height: 40%;
+                border-radius: 20px;
+                border: 1px solid red;
+            }
+
+            .producto-descripcion {
+                background-color: gray;
+                border-radius: 15px;
+                border: 1px solid rgb(10, 186, 98);
+                margin-top: 15px;
+                width: 85%;
+                /*para ajustar el ancho de la descripcion a un tamaño mas chico que la foto y tuve que usar eel display en item-producto*/
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                & h2 {
+                    /*border: 1px solid rgb(10, 186, 98);*/
+                    height: 40%;
+                    background-color: rgb(80, 75, 75);
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                & h3 {
+                    /*border: 1px solid black;*/
+                    height: 40%;
+                    font-size: 17px;
+                }
+
+                & h4 {
+                    /*border: 1px solid rgb(44, 37, 145);*/
+                    height: 20%;
+                    background-color: rgb(100, 90, 90);
+                    border-bottom-left-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    font-size: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                & h2, h3, h4, span {
+                    color: white;
+                }
+            }
+
+            button {
+                border: 2px solid rgb(218, 54, 54);
+                margin-top: 15px;
+                padding: 10px;
+                font-size: 30px;
+                color: blue;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: rgb(211, 204, 204);
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .btn-ver-carrito {
+        margin-top: 23px;
+        font-size: 21px;
+
+        a {
+            padding: 15px;
+            border: 4px solid orange;
+            background-color: brown;
+            color: white;
+            text-decoration: none;
+            border-radius: 40px;
+        }
+    }
+
+    .btn-ver-carrito a:hover {
+        opacity: 0.5;
+    }
+
+    .flechaup {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        border: 2px solid black;
+        padding: 5px 10px;
+        border-radius: 50px;
+        background-color: white;
+
+        a {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+    }
+}
+
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */  
+
+@media (max-width: 450px) {
+
+header {
+        padding: 18px 5px;
+
+        .logoyflecha {
+            a img {
+                width: 45px;
+                height: 32px;
+            }
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        .flechaleft {
+            padding: 3.5px 7px;
+
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .seccion-pizzas {
+
+        .contenedor-productos {
+            border-top: 2.25px solid red;
+            padding: 26.25px;
+            flex-wrap: wrap;
+            gap: 30px;
+
+            .item-producto {
+                width: 285px;
+                height: 420px;
+                margin: 10px 0;
+                padding: 12px 10.5px;
+
+                & img {
+                    height: auto;
+                }
+
+                .producto-descripcion {
+
+                    & h2 {
+                        font-size: 18px;
+                    }
+
+                    & h3 {
+                        font-size: 12.75px;
+                    }
+
+                    & h4 {
+                        font-size: 15px;
+                    }
+                }
+
+                button {
+                    margin-top: 10px;
+                    padding: 7px;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .btn-ver-carrito {
+            margin-top: 25px;
+            font-size: 20px;
+
+            a {
+                padding: 7px;
+            }
+        }
+
+        .flechaup {
+            bottom: 15px;
+            right: 15px;
+            padding: 3px 7px;
+
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+}

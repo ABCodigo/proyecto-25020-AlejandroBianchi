@@ -1,0 +1,29 @@
+WEBVTT
+
+STYLE
+::cue { color: yellow; background: none; font-size: 1.5em; font-weight: bold }
+
+1
+00:00:03.000 --> 00:00:06.500 font-size:60
+<i>calidad</i>
+
+2
+00:00:08.500 --> 00:00:14.500 font-size:60
+<i>artesanal</i>
+
+3
+00:00:18.000 --> 00:00:26.500
+<i>ingredientes frescos</i>
+
+4
+00:00:28.500 --> 00:00:30.500
+<i>sabor</i>
+
+5
+00:00:31.500 --> 00:00:39.000
+<i>excelente coccion</i>
+
+6
+00:00:41.900 --> 00:00:44.900
+<i>momento inolvidable</i>
+

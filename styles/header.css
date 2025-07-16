@@ -1,0 +1,87 @@
+
+header {
+    /*border: 3px solid blue;*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px 25px;
+    background-color: rgb(61, 12, 12);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+    .logoynombre{
+        /*border: 3px solid greenyellow;*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;  
+    }
+
+    .links{         
+        .navbar {
+            /*border: 3px solid rgb(255, 0, 0);*/
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 25px;                
+    
+            & li {
+                list-style: none;                                      
+                font-size: 14px;
+                font-weight: 800;                 
+            }
+    
+            .li-comprar a {
+                color: red;
+                font-size: 20px;
+                font-weight: 700;
+                border: 4px solid green;
+                border-radius: 28px;
+                background-color: white;
+                padding: 7px;
+                text-align: center;
+            }
+    
+            .a-comprar:hover {
+                color: rgb(220, 225, 230);
+                transform: scale(1.15);
+                background-color: red;
+                border: 4px solid green;
+            }
+    
+            & a {
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+                font: 15px;
+                font-weight: 500;
+                color: rgb(220, 225, 230);
+                width: 100%;
+                height: 100%;                    
+                transition: all 0.3s ease-in-out;
+            }
+    
+            & a:hover {
+                color: rgb(220, 225, 230);
+                transform: scale(1.15);                    
+            }
+        }
+    }
+
+    .abrir-menu {
+        display: none;
+    }  
+
+    .cerrar-menu{
+        display: none;
+        padding: 15Px;
+        font-size: 15px;
+        background-color: rgb(132, 69, 69);
+        color: white;
+    }     
+}
+
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */  

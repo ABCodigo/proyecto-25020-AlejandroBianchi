@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Vito Pizza</title>
+    <!--Libreria AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Icono Carrito-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <!--Link a hoja de estilos principal-->
+    <link rel="stylesheet" href="styles/productos.css">
+</head>
+
+<body id="inicio">
+
+    <header class="header">
+        <div class="logoyflecha">
+            <a href="productos.html" class="logo">
+                <img src="image/logoyempresa/logovp.png" class="logo" width="56px" height="40px" alt="Logo VitoPizzas">
+            </a>        
+            <h1>Nuestras Pizzas</h1>
+            <div class="flechaleft">
+                <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+        </div>
+    </header> 
+
+    <main>
+        <section class="seccion-pizzas">  
+            <div data-aos="fade-up" data-aos-duration="3000" class="contenedor-productos" id="contenedorListaProductos">
+            <!--
+                <div class="item-producto" data-aos="zoom-in">
+                    <img src='image/pizzas/fugazza.png' alt='Pizza Fugazza'>
+                    <div class="producto-descripcion">
+                        <h2>Pizza Fugazza</h2>                        
+                        <h3>Descripcion: queso muzzarella, cebolla y oregano.</h3>
+                        <h4>Precio: $ 20000.-</h4>  
+                    </div>                 
+                    <button class="fa-solid fa-cart-shopping" class="btn-agregar-carrito" id="btn-agregar-${producto.id}"></button> 
+                </div>   
+                
+                 <div class="item-producto" data-aos="zoom-in">
+                    <img src='image/pizzas/provollone.png' alt='Pizza Provollone'>
+                    <div class="producto-descripcion">
+                        <h2>Pizza Provollone</h2>                        
+                        <h3>Descripcion: 'muzzarella, salsa de tomate, rodajas de queso provollone, aceitunas negras.</h3>
+                        <h4>Precio: $ 25000.-</h4>  
+                    </div>                 
+                    <button class="fa-solid fa-cart-shopping" class="btn-agregar-carrito" id="btn-agregar-${producto.id}"></button> 
+                </div>
+
+                <div class="item-producto" data-aos="zoom-in">
+                    <img src='image/pizzas/jamoncrudo.png' alt='Pizza Jamon Crudo'>
+                    <div class="producto-descripcion">
+                        <h2>Pizza Jamon Crudo</h2>                        
+                        <h3>Descripcion: muzarella, salsa de tomate, jamon crudo italiano, rucula, parmesano rallado.</h3>
+                        <h4>Precio: $ 27000.-</h4>  
+                    </div>                 
+                    <button class="fa-solid fa-cart-shopping" class="btn-agregar-carrito" id="btn-agregar-${producto.id}"></button> 
+                </div>
+
+                <div class="item-producto" data-aos="zoom-in">
+                    <img src='image/pizzas/napolitana.png' alt='Pizza Napolitana'>
+                    <div class="producto-descripcion">
+                        <h2>Pizza Napolitana</h2>                        
+                        <h3>Descripcion: muzzarella, salsa tomate, rodajas de tomate, ajo, perejil.</h3>
+                        <h4>Precio: $ 22500.-</h4>  
+                    </div>                 
+                    <button class="fa-solid fa-cart-shopping" class="btn-agregar-carrito" id="btn-agregar-${producto.id}"></button> 
+                </div>
+
+                <div class="item-producto" data-aos="zoom-in">
+                    <img src='image/pizzas/jamoncocido.png' alt='Pizza Jamon Cocido'>
+                    <div class="producto-descripcion">
+                        <h2>Pizza Jamon Cocido</h2>
+                        <h3>Descripcion: muzzarella, salsa de tomate, fetas jamon cocido natural, aceitunas verdes.</h3>
+                        <h4>Precio: $ 21500.-</h4>
+                    </div>                 
+                    <button class="fa-solid fa-cart-shopping" class="btn-agregar-carrito" id="btn-agregar-${producto.id}"></button> 
+                </div>
+
+                <div class="item-producto" data-aos="zoom-in">
+                    <img src='image/pizzas/peperoni.png' alt='Pizza Peperoni'>
+                    <div class="producto-descripcion">
+                        <h2>Pizza Peperoni</h2>
+                        <h3>Descripcion: muzzarella, salsa tomate,rodajas de salame milanes.</h3>
+                        <h4>Precio: $ 22500.-</h4>
+                    </div>                 
+                    <button class="fa-solid fa-cart-shopping" class="btn-agregar-carrito" id="btn-agregar-${producto.id}"></button> 
+                </div>
+
+                <div class="item-producto" data-aos="zoom-in">
+                    <img src='image/pizzas/muzzarella.png' alt='Pizza Muzzarella'>
+                    <div class="producto-descripcion">
+                        <h2>Pizza Muzzarella</h2>
+                        <h3>Descripcion: 'muzzarella, salsa de tomate, oregano, aceitunas verdes.</h3>
+                        <h4>Precio: $ 19500.-</h4>
+                    </div>                 
+                    <button class="fa-solid fa-cart-shopping" class="btn-agregar-carrito" id="btn-agregar-${producto.id}"></button> 
+                </div>  
+
+                  <div class="item-producto" data-aos="zoom-in">
+                    <img src='image/pizzas/ananaycherry.png' alt='Pizza Anana y cherry'>
+                    <div class="producto-descripcion">
+                        <h2>Pizza Anana y cherry</h2>                        
+                        <h3>Descripcion: muzzarella, salsa de tomate, mitades de rodajas de anana, tomatitos cherry.</h3>
+                        <h4>Precio: $ 23500.-</h4>  
+                    </div>                 
+                    <button class="fa-solid fa-cart-shopping" class="btn-agregar-carrito" id="btn-agregar-${producto.id}"></button> 
+                </div>
+
+                <div class="item-producto" data-aos="zoom-in">
+                    <img src='image/pizzas/faina.png' alt='Pizza Faina'>
+                    <div class="producto-descripcion">
+                        <h2>Pizza Faina</h2>                        
+                        <h3>Descripcion: suave masa de harina de garbanzos.</h3>
+                        <h4>Precio: $ 14000.-</h4>  
+                    </div>                 
+                    <button class="fa-solid fa-cart-shopping" class="btn-agregar-carrito" id="btn-agregar-${producto.id}"></button> 
+                </div>
+
+                <div class="item-producto" data-aos="zoom-in">
+                    <img src='image/pizzas/fugazzetarellena.png' alt='Pizza Fugazzeta Rellena'>
+                    <div class="producto-descripcion">
+                        <h2>Pizza Fugazzeta Rellena</h2>                        
+                        <h3>Descripcion: rellena con queso fresco EXTRA y muzzarella, cebollas caramelizadas.</h3>
+                        <h4>Precio: $ 28000.-</h4>
+                    </div>                 
+                    <button class="fa-solid fa-cart-shopping" class="btn-agregar-carrito" id="btn-agregar-${producto.id}"></button> 
+                </div>
+
+                <div class="item-producto" data-aos="zoom-in">
+                    <img src='image/pizzas/palmitoysalsagolf.png' alt='Pizza Palmitos'>
+                    <div class="producto-descripcion">
+                        <h2>Pizza Palmitos</h2>                        
+                        <h3>Descripcion: muzarella, salsa de tomate, rodajas o cubos de palmitos y salsa golf.</h3>
+                        <h4>Precio: $ 16500.-</h4>
+                    </div>                 
+                    <button class="fa-solid fa-cart-shopping" class="btn-agregar-carrito" id="btn-agregar-${producto.id}"></button> 
+                </div>
+
+                <div class="item-producto" data-aos="zoom-in">
+                    <img src='image/pizzas/vegetariana.png' alt='Pizza Vegetariana'>
+                    <div class="producto-descripcion">
+                        <h2>Pizza Vegetariana</h2>                        
+                        <h3>Descripcion: muzzarella, salsa tomate, cebolla morada, tomates cherry, hongos, ajo y perejil.</h3>
+                        <h4>Precio: $ 22700.-</h4>
+                    </div>                 
+                    <button class="fa-solid fa-cart-shopping" class="btn-agregar-carrito" id="btn-agregar-${producto.id}"></button> 
+                </div>  
+-->
+            </div>
+        
+            <div class="btn-ver-carrito">
+                <a href="carrito.html">Ver Carrito</a>
+            </div>
+
+             <div class="flechaup">
+                <a href="#inicio"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>   
+
+        </section>
+    </main>
+
+    <script src="../scripts/productos.js"></script>
+    <!--<script src="../scripts/productosfetch.js"></script>-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+
+<!-- 
+
+A) En caso que NO funcione el array del archivo JavaScript (productos.js):
+
+1) descomentar de este html los productos comentados.
+2) comentar el script productos.js (que esta antes del cierre de este body).
+Esto solo mostrara los productos en la seccion PRODUCTOS y luego se debera plantear la logica javaScript para que funcione la seleccion de productos y el carrito. Osea habra que crear el archivo JavaScript para esto (cuyo script se colocara al final del body).
+
+
+B) Se hizo el FETCH usando el archivo JavaScript (../scripts/productosfetch.js), y para poder usarlo/verificar funcionamiento:
+
+1) Comentar en este html antes del cierre de la etiqueta body el archivo ../scripts/productos.js y descomentar el ../scripts/productosfetch.js esto permitira usar la logica que se planteo para usar la API/traer los productos, que se mostraran en la seccion PRODUCTOS.
+2) Una vez que se visualicen y se seleccionen productos, estos se almacenaran en el LocalStorage y para poder visualizarlos en el carrito, en el archivo carrito.html se debe comentar hacia el final del body el srcipt carrito.js y descomentar el carritofetch.js
+Aclaraciones: 
+* para que funcione en el ../scripts/carritofetch.js el incremento de unidades se tuvo que colocar el parseInt. 
+* para que funcione la eliminacion de productos del tacho rojo tambien se tuvo quecolocar parseInt.
+
+
+En cuanto al fetch, conecta con la API, muestra en la seccion Productos los elementos traidos, y revisar si al seleccionarlos los guarda en el LocalStorage (Inspeccionar/Application/LocalStorage) y si es asi hay que ver luego que los nombres de las claves (de la logica del carrito para mostrarlos) sean los mismos que los traidos (price/precio, name/nombre etc) que puede traer el error que aparecia de undefined y recordar tambien el error NaN que puede tener que ver con el parseInt que tendre que usar al traer valores con punto decimal (.) 
+
+Advierto que la visualizacion para query menor a 450px debo corregirla.
+
+-->
+
+
+
+
+

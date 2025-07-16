@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vito Pizza Carrito</title>
+    <!--Icono Carrito-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <!--Link a hoja de estilos principal-->
+    <link rel="stylesheet" href="styles/carrito.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logoyflecha">
+            <a href="carrito.html" class="logo">
+                <img src="image/logoyempresa/logovp.png" class="logo" width="56px" height="40px" alt="Logo VitoPizzas">
+            </a>                    
+            <div class="flechaleft">
+                <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+        </div>
+    </header>    
+
+    <main>
+        <!-- Tabla productos -->
+        <section id="cart" class="section-p1">
+            <h1>Pedido Realizado:</h1>
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td><i class="fa-solid fa-trash-can"></i></td>
+                        <td>IMAGEN</td> 
+                        <td>PRODUCTO</td>
+                        <td>PRECIO</td>
+                        <td>CANTIDAD</td>
+                        <td>SUBTOTAL</td>
+                    </tr>
+                </thead>
+                <tbody id="tabla_carrito">
+                   <!--Aca van los productos cargados/recuperados del LocalStorage-->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Aplicar cupon se incluyo en el calculo del Total del carrito / FALTA LA LOGICA de incorporarlo -->
+        <section id="cart-add" class="section-p2">
+
+            <div id="subtotal">
+                <h3>Total del Carrito</h3>
+                <table>
+                    <tr>
+                        <td>Subtotal compra -c/IVA- ($)</td>
+                        <td id="total"></td>
+                    </tr>
+                    <tr>
+                        <td>Envío hasta 5 cuadras ($)</td>
+                        <td>Gratis</td>
+                    </tr>
+                    <tr>
+                        <td>Envío de 5 a 10 cuadras ($)</td>
+                        <td>1800.00</td>
+                    </tr>
+
+                    <tr id="coupon">
+                        <td class="tdcoupon">
+                            <div class="coupon">
+                                <p>Cupón:</p>   
+                                <div class="inputbutton">                             
+                                    <input type="text" placeholder="Ingresar N°">
+                                    <button class="aplicar">Aplicar</button>  
+                                </div>
+                             <div>
+                        </td>
+                        <td>inactivo</td>
+                    <tr>
+                    <tr>
+                        <td><strong>Total ($)</strong></td>
+                        <td><strong id="total"></strong></td>
+                    </tr>
+                </table>
+                <button class="normal">PAGAR</button>
+            </div>
+        </section>
+    </main>
+   
+    <script src="../scripts/carrito.js"></script>
+     <!--<script src="../scripts/carritofetch.js"></script>-->
+</body>
+
+</html>
+
+<!--
+Dentro de carrito.js hay que agregar la logica del descuento al agregar un N° de cupon.
+-->

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Vito Pizza</title>
+    <!--Icono Carrito-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <!--Link a hoja de estilos principal-->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body id="inicio">
+
+    <header class="header">
+
+        <div class="logoynombre">
+            <a href="#" class="logo">
+                <img src="image/logoyempresa/logovp.png" class="logo" width="56px" height="40px" alt="Logo VitoPizzas">
+            </a>
+
+            <div class="nombre">
+                <img src="image/logoyempresa/vitopizzas.png" class="nombreempresa" width="220px" height="95px"
+                    alt="Nombre Fantasia">
+            </div>
+        </div>
+        
+        <button class="abrir-menu" id="abrir"><i class="fa-sharp fa-solid fa-bars"></i></button>
+        
+        <div class="links" id="links">
+            <button class="cerrar-menu" id="cerrar">Cerrar</button>
+ 
+            <ul class="navbar" id="navbar"> 
+                <li><a href="#">INICIO</a></li>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <!--<li><a href="nosotros.html">NOSOTROS</a></li>  En caso de agregarlo, Incluir aca receta masa y reseña historica-->
+                <li><a href="locales.html">LOCALES</a></li>
+                <li><a href="registrarse.html" class="botones">REGISTRATE</a></li>
+                <li><a href="iniciosesion.html" class="botones">INICIO SESION</a></li>                
+                <li class="li-comprar"><a class="a-comprar fas fa-shopping-cart" href="carrito.html"></a></li> 
+                <!--Eestructura deja espacios en blanco para separar por ej el carrito y texto &nbsp;&nbsp;&nbsp;-->                 
+            </ul>
+            
+        </div>  
+    
+    </header> 
+
+    <main>
+        <section class="hero">
+
+            <div id="multimedia" class="video">
+                <h4>Elaboramos nuestra propia masa y salsa.</h4>            
+                <video controls>
+                    <source src="videos/vitopizzas.mp4" type="video/mp4">
+                    <track default src="videos/subtitulo-es.vtt" kind="subtitles" srclang="es" label="Español" />
+                    <track src="videos/subtitulo-en.vtt" kind="subtitles" srclang="en" label="Ingles" />
+                </video>
+            </div>
+
+            <div class="hero-content">
+                 <h1>Pizzeria Artesanal</h1>
+                 <h2>La mejor pizza Argentina</h2>                 
+                 <p>Con ingredientes de la mas alta calidad</p> 
+                 <p>Nos especializamos en Pizzas</p>
+                 <a href="productos.html">Haga su Pedido aqui</a>
+            </div>
+            
+        </section>
+
+        <!--Se utilizo Formspree y esta funcional (llegan los e-mails)-->
+        <section class="contacto">
+            <div></div>
+            <form action="https://formspree.io/f/mzzgawya" method="POST" autocomplete="off">
+                <h1>CONTACTO</h1>
+            
+                <h2>Dejanos tu Mensaje</h2>
+            
+                <div class="form-contacto">
+            
+                    <div class="info-contacto">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="name" required>
+                    </div>
+            
+                    <div class="info-contacto">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <!--En caso de agregar el telefono al formulario-->
+                    <!--<div class="info-contacto">        
+                                    <label for="telefono">Telefono</label>
+                                    <input type="tel" id="telefono" name="phone" required>
+                                </div>-->
+            
+                    <div class="info-contacto">
+                        <label for="asunto">Asunto</label required>
+                        <select name="asunto" id="asunto">
+                            <option>Comercial</option>
+                            <option>Sugerencias</option>
+                            <option>Reserva</option>
+                        </select>
+                    </div>
+            
+                    <div class="info-contacto">
+                        <!--<label for="mensaje">Mensaje</label>-->
+                        <textarea rows="6" cols="5" name="message" id="message" placeholder="Escriba aqui su mensaje . . . . "></textarea>
+                    </div>
+            
+                    <div class="boton-enviar">
+                        <input type="submit" value="Enviar">
+                    </div>
+            
+                    <div class="boton-resetear">
+                        <input type="reset" value="Resetear">
+                    </div>
+
+                </div>
+            </form>
+        </section>
+      
+
+    </main>
+
+    <footer>
+
+        <div class="pie-pagina">
+
+            <div class="sucursales">
+                <hr>
+                <br>
+                <h4><u>SUCURSALES:</u></h4>              
+                <br>        
+                <p>Palermo. (C.A.B.A)</p>
+                <p><i>Direccion: Guatemala 4699.</i></p>
+                <P><i>Horario: 10 a 24 hs.</i></P>
+                <p><i>Lunes a Domingos.</i></p>                             
+
+                <br>        
+                <p>Recoleta. (C.A.B.A)</p>
+                <p><i>Direccion: Vicente Lopez 2048.</i></p>
+                <P><i>Horario: 10 a 24 hs.</i></P>
+                <p><i>Martes a Domingos.</i></p>  
+                <br>
+                <hr>      
+            
+                <br> <!-- br son saltos de linea -->
+                <h4><u>CONTACTO</u></h4>
+                <p> adminisracion@vitopizzas.com.ar</p>
+                <p>Tel.:0-800-444-VITO (8486)</p>
+                <br> 
+                <p><a href="#"><i class="icono-whatsapp fa-brands fa-whatsapp"></i></a>&nbsp;&nbsp;Whatsapp</p>
+                <br> <!--Se usa para dejar espacios en blanco entre palabras &nbsp;&nbsp;-->
+                <hr>
+            </div>
+
+            <div class="infolegal">
+                <h3><a href="acercadelapagina.html">Acerca de la Pagina</a></h3>
+                <h3><a href="consideracioneslegales.html">Terminos y Condiciones</a></h3>
+                <h3><a href="https://autogestion.produccion.gob.ar/consumidores" target="_blank">Defensa al Consumidor</a></h3>
+            </div>
+
+            <div class="redesymediosdepago">            
+                <div class="redessociales">
+                    <h4>Seguinos en las redes Sociales</h4>
+                    <div class="grid-iconos-redes">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>                        
+                    </div>
+                </div>
+            
+                <div class="mediosdepago">
+                    <h4>Medios de Pago</h4>
+                    <div class="grid-imagenes-mediosdepago">
+                        <div class="grid-tarjetas">
+                            <img class="img1" src="image/bancos/visa.png" alt="logovisa">
+                            <img class="img2" src="image/bancos/mastercard.png" alt="mastercard">
+                        </div>
+                        <div class="grid-bancos">
+                            <img class="img3"src="image/bancos/2bcofrances.png" alt="logo banco frances">
+                            <img class="img4"src="image/bancos/1bcogalicia.png" alt="logo banco galicia">
+                            <img class="img5"src="image/bancos/3bcomacro.png" alt="logo banco macro">
+                            <img class="img6"src="image/bancos/4bcorio.png" alt="logo banco rio">
+                            <img class="img7"src="image/bancos/5bcosuperielle.png" alt="logo banco supervielle">
+                            <img class="img8"src="image/bancos/6bcohsbc.jpg" alt="logo banco hsbc">
+                        </div>
+                    </div>
+                </div>            
+            </div>
+
+        </div>
+
+        <div class="copyrightyflechaup">
+            <div class="copyright">
+                <p>© 2025-ABCodex - PAGINA FICTICIA -</p>
+            </div>        
+            <div class="flechaup">
+                <a href="#inicio"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+
+    </footer>    
+
+    <!--<script src="index.js"></script>-->
+    <script src="../scripts/menu.js"></script>
+</body>
+
+</html>
+
+
+
+

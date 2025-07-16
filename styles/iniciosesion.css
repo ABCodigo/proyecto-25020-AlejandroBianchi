@@ -1,0 +1,261 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Roboto", sans-serif;
+}
+
+body {
+   background-color: rgb(53, 45, 45);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100vh;
+   /*border: 5px solid rgb(32, 230, 49);*/
+}
+
+header {
+   /*border: 3px solid blue;*/
+   color: white;
+   padding: 18px 25px;
+   width: 100%;
+
+   .logoyflecha {
+      display: flex;
+      justify-content: space-between;
+      /*border: 3px solid greenyellow;*/
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .dibudos{
+         /*background-color: rgb(240, 237, 216);*/
+         /*border-radius: 45px;*/
+         /*outline: 2px solid white;*/
+         filter: drop-shadow(0 0 0 white) drop-shadow(0 0 4px white); 
+         /*drop-shadow(0 0 0 white): crea un primer "borde blanco ajustado" al contenido visible (forma real del PNG).*/
+         /*drop-shadow(0 0 4px white): agrega un desenfoque (suave) que da volumen al borde.*/
+      }
+   }
+
+   .logo{
+      align-self: flex-start; /*permite alinear el logo y la flecha en la misma linea que el dibujo pero mas arriba*/
+   }
+
+   .flechaleft {
+      align-self: flex-start;
+      border: 2px solid black;
+      padding: 5px 10px;
+      border-radius: 50px;
+      background-color: white;
+
+      a {
+         font-size: 20px;
+         font-weight: bold;
+         color: black;
+      }
+   }
+}
+
+form {
+   width: 350px;
+   background-color: red;
+   padding: 20px;
+   border: 4px double rgb(0, 183, 0);
+   border-radius: 15px;
+
+   a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;   
+   }
+
+   a:hover {
+      color: yellow;
+   }
+
+   h1 {
+      text-align: center;
+      color: black;
+      margin-bottom: 20px;
+      font-size: 32px;
+   }
+
+   .campos-sesion {
+      position: relative;
+
+      i {
+         position: absolute;
+         top: 40px;
+         margin-left: 14px;
+         font-size: 20px;
+         color: green;
+         transition: .3s ease;
+      }
+
+      input {
+         width: 100%;
+         padding: 12px 0 12px 50px;
+         margin-top: 25px;
+         margin-bottom: 2px;
+         font-size: 14px;
+         border: 4px solid rgb(133, 3, 3);
+         border-radius: 6px;
+      }
+
+      /* esto se agraga para la validacion del formulario al aparecer el error*/
+      .error input:not(.check, .boton),
+      .error select {
+         border: 4px solid yellow;
+         box-shadow: 1px 1px 1px 1px rgb(31, 7, 212);
+      }
+
+      .error-text {
+         background-color: yellow;
+         text-align: center;
+         color: black;
+         font-weight: bold;
+         font-size: 0.8rem;
+         margin-top: 0;
+      }
+
+      .campos-sesion:focus-within i {
+         transform: scale(1.6);
+      }
+   }
+}
+
+.buttons {
+   display: flex;
+   flex-direction: column;
+   margin: 20px 95px 30px;
+   gap: 20px;
+
+   a {
+      text-align: center;
+      color: white;
+      background-color: rgb(48, 149, 48);
+      padding: 5px;
+      border: 2px solid green;
+      border-radius: 5px;
+      text-decoration: none;
+   }
+   a:hover {
+      transform: scale(1.1);
+      background-color: green;
+   }
+
+   .boton {
+      margin-top: 20px;
+      padding: 10px 0;
+      background-color: rgb(48, 149, 48);
+      color: white;
+      border: 4px solid green;
+      border-radius: 10px;
+      transition: 0.3s ease-in;
+   }
+
+   .boton:hover {
+      transform: scale(1.1);
+      background-color: green;
+   }
+
+}
+
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */  
+
+@media (max-width: 430px) {
+
+   header {
+      padding: 18px 5px;
+
+      .logoyflecha {
+         a img {
+            width: 45px;
+            height: 32px;
+         }
+
+         .flechaleft {
+            padding: 3.5px 7px;
+      
+            a {
+               font-size: 16px;
+            }
+         }
+      }
+   }
+}
+
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */ 
+
+@media (max-width: 410px) {
+
+body {   
+   form {
+      width: 290px;
+      padding: 17px;
+
+      h1{
+         margin-bottom: 26px;
+         font-size: 27px;
+      }
+
+      .campos-sesion{
+         i{
+            margin-left: 12px;
+            font-size: 15px;
+         }
+
+         input{
+            padding: 10px 0 10px 35px;
+            font-size: 12px;
+         }         
+      }
+   }
+
+   .buttons {      
+      margin: 17px 81px 26px;
+      gap: 17px;  
+      
+      a{
+         border-radius: 4px;
+         font-size: 12.5px;
+      } 
+
+      button{
+         padding: 8.5px 0;
+         font-size: 11.5px;
+      }
+
+         button:hover{
+            transform: scale(1.05);
+         }
+   }
+}  
+}
+
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
