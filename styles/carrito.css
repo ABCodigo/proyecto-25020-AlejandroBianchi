@@ -23,9 +23,23 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      .dibujos{
+         /*background-color: rgb(240, 237, 216);*/
+         /*border-radius: 45px;*/
+         /*outline: 2px solid white;*/
+         filter: drop-shadow(0 0 0 white) drop-shadow(0 0 4px white); 
+         /*drop-shadow(0 0 0 white): crea un primer "borde blanco ajustado" al contenido visible (forma real del PNG).*/
+         /*drop-shadow(0 0 4px white): agrega un desenfoque (suave) que da volumen al borde.*/
+      }
+   }
+
+   .logo{
+      align-self: flex-start;
    }
 
    .flechaleft {
+      align-self: flex-start;
       border: 2px solid black;
       padding: 5px 10px;
       border-radius: 50px;
@@ -363,10 +377,10 @@ main{
 
 /*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */  
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
 
     header {
-        padding: 8px 5px;
+        padding: 18px 5px 8px;
 
         .logoyflecha {
             a img {
